@@ -6,7 +6,6 @@ var userSchema = new mongoose.Schema({
   email:    {type: String, required: true},
   // password: String,
   mod:      {type: Boolean, default: false},
-  // threads:  [{type: mongoose.Schema.Types.ObjectId, ref: 'Thread'}]
 });
 
 //MODEL

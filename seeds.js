@@ -35,8 +35,12 @@ User.remove({}, function(err, results) {
       if (err) {
         console.log(err);
       } else {
-        console.log(users[0]._id);
-        Thread.create({name: "Keith is the true iceman", creator: users[0]._id}, function(err, thread) {
+
+        var john = users[0];
+        var thur = users[2];
+
+
+        Thread.create({name: "Keith is the true iceman", creator: john, creatorName: john.name}, function(err, thread) {
           if (err) {
             console.log(err);
           } else {

@@ -4,6 +4,7 @@
   "description": "",
   "main": "Blub.js",
   "dependencies": {
+    "locus": "^1.2.0",
     "mongoose": "^4.4.6"
   },
   "devDependencies": {},

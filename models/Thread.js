@@ -3,7 +3,8 @@ var mongoose = require('mongoose');
 //SCHEMA
 var threadSchema = new mongoose.Schema({
 name: {type: String, required: true},
-creator: mongoose.Schema.Types.ObjectId
+creator: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
+creatorName: String
 })
 
 //MODEL
